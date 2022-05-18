@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+
+/****************
+* Global Styles *
+****************/
 :root {
     --dark-color: rgba(49,38,62, .93);
     --shadow-color: rgba(49,38,62,0.3);
@@ -27,10 +31,16 @@ body {
 
 .main-container {
     margin: 5em auto;
-    max-width: 800px;
+    width: 90%;
     border-radius: 15px;
     box-shadow: 10px 10px 10px var(--shadow-color);
     overflow: hidden;
+}
+
+
+h1, p, ul, li, label, address, input {
+    margin: 0;
+    padding: 0;
 }
 
 /**********
@@ -40,14 +50,14 @@ body {
 .header-container {
     margin: auto;
     text-align: center;
-    padding: 1.7rem;
+    padding: 5rem 2rem;
     background-color: var(--dark-color);
     color: white;
 }
 
 .header-container h1 {
-    margin: 2rem 0 0;
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .header-container p {
@@ -73,7 +83,7 @@ form .group-container {
 }
 
 form input, #dropdown, label, #comments, p {
-    font-family: 'Poppins', sans-serif;
+    font-family: inherit;
     font-size: 1.8rem;
 }
 
@@ -86,10 +96,6 @@ form input {
     padding: 0.2rem;
 }
 
-form p {
-    margin: 0;
-}
-
 form span {
     font-size: 1.4rem;
 }
@@ -100,7 +106,7 @@ form button {
     border-radius: 5px;
     font-size: 2.2rem;
     margin: 2rem auto 2.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: inherit;
     display: block;
     border: none;
     padding: 0.5rem 3rem;
@@ -207,12 +213,12 @@ input[type="checkbox"]:checked:after {
  **********/
 
 footer {
-    margin: 0;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 500;
     background-color: var(--footer-bg);
-    padding: 0.5rem 0 2.3rem 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     color: white;
 }
 
@@ -222,11 +228,20 @@ footer a {
 
 address {
     font-style: normal;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 1rem;
 }
 
 footer a:hover {
     background-color: var(--accent-color);
     color: black;
+}
+
+
+/******************
+* Media - Desktop *
+******************/
+@media (min-width: 900px) {
+    .main-container {
+        max-width: 800px;
+    }
 }
