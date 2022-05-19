@@ -92,6 +92,16 @@ form .text-input, #dropdown, #comments {
     padding: 0.7rem;
 }
 
+
+form .text-input {
+    display: block;
+    overflow: hidden;
+}
+
+#dropdown {
+    width: 100%;
+}
+
 form input {
     padding: 0.2rem;
 }
@@ -141,6 +151,7 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width:20px!important;
 }
 
 input[type="radio"]:after {
@@ -184,6 +195,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width:20px!important;
 }
 
 input[type="checkbox"]:after {
@@ -206,7 +218,6 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked:after {
     display: block;
 }
-
 
 /**********
  * Footer *
